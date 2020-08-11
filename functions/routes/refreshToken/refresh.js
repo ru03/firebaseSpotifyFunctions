@@ -2,7 +2,7 @@ const router = require('express').Router();
 const functions = require('firebase-functions');
 const nodeFetch = require('node-fetch');
 const { URLSearchParams } = require('url');
-const addPrivateToken = require('../utils/addPrivateToken');
+const addPrivateToken = require('../../utils/addPrivateToken');
 
 router.post('/', async (req, res) => {
   functions.logger.info("Start Spoti Refresh!", { structuredData: true });
